@@ -17,6 +17,14 @@ jobs:
           root_file: cv.tex
           latexmk_use_xelatex: false
 
+      - name: Commit PDF to this repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add cv.pdf
+          git diff --cached --quiet || git commit -m "Build cv.pdf"
+          git push
+
       - name: Push to website repo
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:

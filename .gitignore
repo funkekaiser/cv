@@ -1,7 +1,5 @@
 .DS_Store
 CV.pages
-Profile.pdf
-cv.txt
 
 # LaTeX build artefacts
 *.aux
@@ -19,3 +17,4 @@ cv.txt
 *.snm
 *.vrb
 *.xdv
+*.pdf

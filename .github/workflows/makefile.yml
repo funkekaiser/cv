@@ -1,0 +1,30 @@
+# .github/workflows/build-cv.yml
+name: Build and deploy CV
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install TeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          latexmk_use_xelatex: false
+
+      - name: Push to website repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.CV_DEPLOY_TOKEN }}
+        with:
+          source_file: cv.pdf
+          destination_repo: funkekaiser/funkekaiser-website
+          destination_branch: main
+          user_email: jonathan@funkekaiser.com
+          user_name: Jonathan Funke-Kaiser
+          commit_message: "Update CV"

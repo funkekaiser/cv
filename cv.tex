@@ -1,39 +1,92 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+%-------------------------
+% Based on Rover Resume - Base Template by subidit
+% https://github.com/subidit/rover-resume (CC BY 4.0)
+%-------------------------
 
-\moderncvstyle{classic}
-\moderncvcolor{blue}
+\documentclass[11pt]{article}
 
+\usepackage[margin=1in, a4paper]{geometry}
+\setcounter{secnumdepth}{0}
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{4pt}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsubsection}{\large\itshape}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep,left=0pt .. \parindent}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.82]{geometry}
-
-% Personal data
-\name{Jonathan-Oliver}{Funke-Kaiser}
-\title{Data Science Student}
-\address{Vienna}{Austria}{}
-\email{jonathan@funkekaiser.com}
-\homepage{funkekaiser.com}
-\extrainfo{\httplink[jof.dev]{jof.dev}}
-\social[linkedin]{jonathan-oliver-funke-kaiser}
-\social[github]{funkekaiser}
+\pagestyle{empty}
+\pdfgentounicode=1
 
 \begin{document}
 
-\makecvtitle
-
-\section{Experience}
-\cventry{May 2024 -- Nov 2025}{Student Employee}{University of Vienna}{Vienna, Austria}{}{}
-\cventry{Dec 2018 -- Jan 2019}{Museum Attendant}{Kunsthistorisches Museum Wien}{Vienna, Austria}{}{}
-\cventry{Jul 2017}{Intern}{Novartis}{}{}{}
-\cventry{Jul 2016}{Intern}{Novartis}{}{}{}
+\begin{center}
+	\begin{minipage}{0.5\textwidth}
+		{\Huge\bfseries Jonathan-Oliver Funke-Kaiser} \\ \medskip
+		Data Science Student
+	\end{minipage} \hfill
+	\begin{minipage}{0.45\textwidth}
+		\raggedleft
+		Email: jonathan@funkekaiser.com \\
+		Web: funkekaiser.com $\,|\,$ jof.dev \\
+		LinkedIn: linkedin.com/in/jonathan-oliver-funke-kaiser \\
+		GitHub: github.com/funkekaiser
+	\end{minipage}
+\end{center}
 
 \section{Education}
-\cventry{}{BSc Computer Science}{University of Vienna}{Vienna, Austria}{\textit{Focus: Data Science}}{}
-\cventry{}{Chemistry}{HTL Kramsach}{Kramsach, Austria}{\textit{Focus: Chemical Process Engineering}}{}
+%=================%
+\subsection{University of Vienna, Vienna $|$ {\normalfont\itshape BSc Computer Science} \hfill ongoing}
+\begin{itemize}
+	\item Focus on Data Science, Machine Learning and Artificial Intelligence
+\end{itemize}
+\subsection{University of Vienna, Vienna $|$ {\normalfont\itshape BA Philosophy} \hfill ongoing}
+\subsection{Abendgymnasium Wien, Vienna $|$ {\normalfont\itshape High School Diploma}}
+\subsection{HTL Kramsach, Kramsach $|$ {\normalfont\itshape Chemical Process Engineering}}
 
-\section{Skills}
-\cvitem{Languages}{Python, R, SQL}
-\cvitem{Libraries}{NumPy, Pandas, scikit-learn, PyTorch}
-\cvitem{Tools}{Git, Linux, \LaTeX}
-\cvitem{Spoken}{German (native), English (fluent)}
+\section{Experience}
+%==================%
+\subsection{University of Vienna \hfill Vienna, Austria}
+\subsubsection{Student Employee, Journalism, Communications and Informatics Library \hfill May 2024 - Nov 2025}
+\begin{itemize}
+	\item Assisted students with library resources, including research databases and technical support.
+	\item Managed book lending, returns and inventory maintenance, ensuring smooth and efficient operation.
+\end{itemize}
+
+\subsection{Kunsthistorisches Museum \hfill Vienna, Austria}
+\subsubsection{Museum Attendant \hfill Dec 2018 - Feb 2019}
+\begin{itemize}
+	\item Welcomed visitors and shared insights into the museum's collections.
+	\item Monitored exhibits and ensured the safety of valuable artwork and compliance with visitor policies.
+\end{itemize}
+
+\subsection{SANDOZ -- Novartis \hfill Kundl, Austria}
+\subsubsection{Intern \hfill Jul - Aug 2017}
+\begin{itemize}
+	\item Supported project teams in pharmaceutical development processes, gaining hands-on industry experience.
+\end{itemize}
+
+\subsection{SANDOZ -- Novartis \hfill Kundl, Austria}
+\subsubsection{Intern \hfill Jul - Aug 2016}
+\begin{itemize}
+	\item Collected samples and prepared the sterile room for quality control of ingredients.
+\end{itemize}
+
+\section{Skills \& Languages}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Programming] Python, SQL, R, Bash
+	\item[Data \& ML] NumPy, Pandas, scikit-learn, PyTorch, MariaDB
+	\item[Infrastructure] Linux, Docker, Tailscale, Caddy, Networking, Self-hosted services
+	\item[Tools] Git, Make, \LaTeX, Obsidian
+	\item[Languages] German (native), English (C2), Spanish (A2)
+\end{description}
+
+\section{Other}
+%=============%
+\begin{description}[itemsep=0pt]
+	\item[Die PARTEI] Party Board of Directors \hfill 2021 - 2023
+\end{description}
 
 \end{document}

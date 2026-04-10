@@ -1,11 +1,12 @@
 # CV
 
-LaTeX source for Jonathan-Oliver Funke-Kaiser's curriculum vitae, built with
-[`moderncv`](https://ctan.org/pkg/moderncv) (classic style).
+LaTeX source for Jonathan-Oliver Funke-Kaiser's curriculum vitae, based on the
+[Base Rover](https://github.com/subidit/rover-resume) résumé template by
+subidit (CC BY 4.0).
 
 ## Prerequisites
 
-A TeX distribution with `latexmk` and the `moderncv` package.
+A TeX distribution with `latexmk`, `titlesec` and `enumitem`.
 
 On macOS, install BasicTeX and the required packages:
 
@@ -17,7 +18,7 @@ brew install --cask basictex
 eval "$(/usr/libexec/path_helper)"
 
 sudo tlmgr update --self
-sudo tlmgr install latexmk moderncv collection-fontsrecommended
+sudo tlmgr install latexmk titlesec enumitem
 ```
 
 ## Build

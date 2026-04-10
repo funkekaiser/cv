@@ -4,10 +4,15 @@ name: Build and deploy CV
 on:
   push:
     branches: [main]
+    paths:
+      - 'cv.tex'
+      - 'Makefile'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 

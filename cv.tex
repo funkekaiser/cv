@@ -8,7 +8,7 @@
 \usepackage[margin=1in, a4paper]{geometry}
 \setcounter{secnumdepth}{0}
 \usepackage{titlesec}
-\titlespacing{\subsection}{0pt}{*0}{4pt}
+\titlespacing{\subsection}{0pt}{*0}{*0.25}
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
 \titleformat*{\subsubsection}{\large\itshape}
@@ -18,20 +18,21 @@
 \usepackage[utf8]{inputenc}
 \pagestyle{empty}
 \pdfgentounicode=1
+\usepackage[hidelinks]{hyperref}
 
 \begin{document}
 
 \begin{center}
 	\begin{minipage}{0.5\textwidth}
-		{\Huge\bfseries Jonathan-Oliver Funke-Kaiser} \\ \medskip
+		{\Huge\bfseries Jonathan \\[2pt] Funke-Kaiser} \\ \medskip
 		Data Science Student
 	\end{minipage} \hfill
 	\begin{minipage}{0.45\textwidth}
 		\raggedleft
-		Email: jonathan@funkekaiser.com \\
-		Web: funkekaiser.com $\,|\,$ jof.dev \\
-		LinkedIn: linkedin.com/in/jonathan-oliver-funke-kaiser \\
-		GitHub: github.com/funkekaiser
+		Email: \href{mailto:jonathan@funkekaiser.com}{jonathan@funkekaiser.com} \\
+		Web: \href{https://funkekaiser.com}{funkekaiser.com} $\,|\,$ \href{https://jof.dev}{jof.dev} \\
+		LinkedIn: \href{https://linkedin.com/in/funkekaiser}{linkedin.com/in/funkekaiser} \\
+		GitHub: \href{https://github.com/funkekaiser}{github.com/funkekaiser}
 	\end{minipage}
 \end{center}
 
@@ -41,14 +42,18 @@
 \begin{itemize}
 	\item Focus on Data Science, Machine Learning and Artificial Intelligence
 \end{itemize}
+\vspace{-8pt}
 \subsection{University of Vienna, Vienna $|$ {\normalfont\itshape BA Philosophy} \hfill ongoing}
-\subsection{Abendgymnasium Wien, Vienna $|$ {\normalfont\itshape High School Diploma}}
+\vspace{12pt}
+\subsection{Abendgymnasium Wien, Vienna $|$ {\normalfont\itshape Matura (High School Diploma)}}
 \subsection{HTL Kramsach, Kramsach $|$ {\normalfont\itshape Chemical Process Engineering}}
+\vspace{12pt}
 
 \section{Experience}
 %==================%
 \subsection{University of Vienna \hfill Vienna, Austria}
-\subsubsection{Student Employee, Journalism, Communications and Informatics Library \hfill May 2024 - Nov 2025}
+\subsubsection{Student Employee, \hfill May 2024 - Nov 2025}
+\subsubsection{Journalism, Communications \& Informatics Library}
 \begin{itemize}
 	\item Assisted students with library resources, including research databases and technical support.
 	\item Managed book lending, returns and inventory maintenance, ensuring smooth and efficient operation.
@@ -62,25 +67,20 @@
 \end{itemize}
 
 \subsection{SANDOZ -- Novartis \hfill Kundl, Austria}
-\subsubsection{Intern \hfill Jul - Aug 2017}
+\subsubsection{Intern \hfill Summers 2016 \& 2017}
 \begin{itemize}
-	\item Supported project teams in pharmaceutical development processes, gaining hands-on industry experience.
-\end{itemize}
-
-\subsection{SANDOZ -- Novartis \hfill Kundl, Austria}
-\subsubsection{Intern \hfill Jul - Aug 2016}
-\begin{itemize}
+	\item Supported project teams in pharmaceutical development processes, gaining hands-on \\industry experience.
 	\item Collected samples and prepared the sterile room for quality control of ingredients.
 \end{itemize}
 
 \section{Skills \& Languages}
 %===========================%
 \begin{description}[itemsep=0pt]
-	\item[Programming] Python, SQL, R, Bash
-	\item[Data \& ML] NumPy, Pandas, scikit-learn, PyTorch, MariaDB
-	\item[Infrastructure] Linux, Docker, Tailscale, Caddy, Networking, Self-hosted services
+	\item[Programming] Python, SQL, R, Rust, C++, Java
+	\item[Data \& ML] NumPy, Pandas, PyTorch, MariaDB
+	\item[Infrastructure] Linux, Docker, Caddy, Networking, Self-hosted services
 	\item[Tools] Git, Make, \LaTeX, Obsidian
-	\item[Languages] German (native), English (C2), Spanish (A2)
+	\item[Languages] German (Native), English (Proficient), Spanish (Basic)
 \end{description}
 
 \section{Other}

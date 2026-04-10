@@ -40,6 +40,3 @@ make ENGINE=xelatex
 
 - `cv.tex` — CV source
 - `Makefile` — build targets
-
-
-![CV](./cv.pdf)
